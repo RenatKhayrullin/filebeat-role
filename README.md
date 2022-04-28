@@ -13,14 +13,14 @@ Role Variables
 
 | Variable name | Default | Description |
 |-----------------------|----------|-------------------------|
-| elasticsearch_version | "7.16.2" | Параметр, который определяет какой версии elasticsearch будет установлен |
+| filebeat_version | "7.16.2" | Параметр, который определяет какой версии filebeat будет установлен |
 
 Example Playbook
 ----------------
 
     - hosts: all
       roles:
-         - { role: kibana-role }
+         - { role: filebeat-role }
 
 License
 -------
