@@ -1,0 +1,7 @@
+---
+- name: Upload Filebeat .deb file containing binaries from local storage
+  copy:
+    src: "{{ filebeat_package_deb }}"
+    dest: "/tmp/filebeat-{{ filebeat_version }}-amd64.deb"
+  register: download_filebeat_binaries
+  until: download_filebeat_binaries is succeeded

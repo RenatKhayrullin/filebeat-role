@@ -1,0 +1,7 @@
+---
+- name: Install Filebeat from deb package
+  become: true
+  apt:
+    deb: "/tmp/filebeat-{{ filebeat_version }}-amd64.deb"
+    state: present
+  notify: restart Filebeat

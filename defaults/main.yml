@@ -1,4 +1,5 @@
 ---
 filebeat_version: "7.16.2"
-filebeat_package: "filebeat-{{ filebeat_version }}-x86_64.rpm"
+filebeat_package_rpm: "filebeat-{{ filebeat_version }}-x86_64.rpm"
+filebeat_package_deb: "filebeat-{{ filebeat_version }}-amd64.deb"
 filebeat_install_type: remote
