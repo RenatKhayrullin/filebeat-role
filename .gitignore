@@ -42,3 +42,4 @@ terraform.rc
 
 **/roles/
 /ansible
+/.tox
